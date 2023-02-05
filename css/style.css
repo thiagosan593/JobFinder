@@ -38,39 +38,45 @@ nav::after {
     content: "";
     display: block;
 }
-.nav-container{
+
+.nav-container {
     max-width: 1200px;
     position: relative;
     margin-right: auto;
     margin-left: auto;
 
 }
-#logo{
+
+#logo {
     width: 50px;
     height: 50px;
     margin-top: 25px;
 }
-.nav-container ul{
+
+.nav-container ul {
     float: right;
     height: 100px;
     line-height: 100px;
     margin: 0;
 }
-.nav-container li{
+
+.nav-container li {
     list-style: none;
     float: left;
     margin: 0 15px;
 }
-.nav-container li a{
+
+.nav-container li a {
     text-decoration: none;
-   transition: 0.5s;
+    transition: 0.5s;
 }
-.nav-container li a:hover{
+
+.nav-container li a:hover {
     color: #3381f3;
 }
 
 /*Banner*/
-#main-banner{
+#main-banner {
     background: url('../img/banner6.jpg') no-repeat;
     background-size: cover;
     background-position: 0 55%;
@@ -79,7 +85,7 @@ nav::after {
 
 }
 
-#search-form{
+#search-form {
     position: relative;
     width: 80%;
     margin-left: auto;
@@ -88,17 +94,20 @@ nav::after {
     padding-bottom: 15em;
     text-align: center;
 }
-#search-form h1{
-    font-size: 40px ;
+
+#search-form h1 {
+    font-size: 40px;
 }
-#search-form p{
+
+#search-form p {
     margin-top: 30px;
     margin-bottom: 60px;
     font-size: 18px;
     font-weight: 300;
 }
 
-#search-form input, #search-form select{
+#search-form input,
+#search-form select {
     background-color: #fff;
     border-radius: 5px;
     border-color: transparent;
@@ -107,13 +116,167 @@ nav::after {
     margin: 0 10px;
 }
 
-#search-form input[type=submit]{
+#search-form input[type=submit] {
     background-color: #3381f3;
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
-    transition:  0.5s;
+    transition: 0.5s;
 }
-#search-form input[type=submit]:hover{
+
+#search-form input[type=submit]:hover {
     background-color: #2b79eb;
+}
+
+/*seção de ultimas vagas*/
+#lastjobs-container {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lastjobs-container h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+#lastjobs-container ul {
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#lastjobs-container ul li {
+    list-style: none;
+    text-align: left;
+    border-bottom: solid 1px #ccc;
+    height: 80px;
+    position: relative;
+}
+
+#lastjobs-container ul li:last-child {
+    border: none;
+
+}
+
+.clickarea {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Company img*/
+.company-box {
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    padding-left: 1%;
+}
+
+.company-box img {
+    width: 100px;
+    margin-top: 2.5px;
+}
+
+.company-info {
+   display: inline-block;
+    margin-top: 10px;
+    text-align: left;
+    position: absolute;
+}
+
+.company-info h3 {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.company-info p {
+    font-weight: bold;
+}
+
+/*Company Locality*/
+
+.locality{
+    margin-left: 25%;
+    color: #6d6d6d;
+    display: inline-block;
+    width: 25%;
+    position: absolute;
+    height: 100%;
+    line-height: 80px;
+}
+
+.locality i,
+.locality p {
+    display: inline-block;
+}
+
+.locality i {
+    margin-right: 5px;
+}
+
+/*Company Job type*/
+.job-type {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    padding-top: 30px;
+    right: 1%;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 12px;
+
+}
+
+.job-type span {
+    display: block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.clt {
+    background-color: #735fee;
+}
+
+.pj {
+    background-color: #5bbc2e;
+}
+
+.homeoffice {
+    background-color: #ff5a5f;
+}
+
+/*See more div*/
+.btnjobs-container{
+    margin-top: 50px;
+   
+}
+.btn-jobs{
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #3381f3 ;
+    border: solid 2px #3381f3;
+    border-radius:5px ;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+
+.btn-jobs:hover{
+ background-color: #3381f3;   
+ color: #fff;
 }

@@ -439,11 +439,15 @@ nav::after {
 /*Blog Container*/
 
 #blog-container {
+   
     text-align: center;
-    padding-top: 5em 0;
+    padding-top: 10em 0;
 }
-
+#blog-container h2{
+    padding-top: 30px;
+}
 #blog-container .p-center {
+  
     margin-bottom: 60px;
 }
 

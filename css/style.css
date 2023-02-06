@@ -536,6 +536,9 @@ footer li {
     padding: 1%;
     float: left;
 }
+.footer-box h2{
+    padding: .5em 0;
+}
 footer .wrapper:after{
     clear: both;
     content: "";

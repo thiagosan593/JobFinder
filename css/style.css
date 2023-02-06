@@ -500,6 +500,7 @@ nav::after {
 /*Footer*/
 
 footer {
+    margin-top: 3em;
     background-color: #666;
     padding:  5em 0;
     padding-bottom: 40px;
@@ -573,7 +574,7 @@ footer .wrapper:after{
     width: 80%;
 }
 
-.footer-lis.footer-article-list span{
+.footer-list.footer-article-list span{
     display: block;
     float: none;
 }

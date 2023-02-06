@@ -502,7 +502,7 @@ nav::after {
 footer {
     margin-top: 3em;
     background-color: #666;
-    padding:  5em 0;
+    padding: 5em 0;
     padding-bottom: 40px;
     border-top: 5px solid #3381f3;
 }
@@ -536,68 +536,142 @@ footer li {
     padding: 1%;
     float: left;
 }
-.footer-box h2{
+
+.footer-box h2 {
     padding: .5em 0;
 }
-footer .wrapper:after{
+
+footer .wrapper:after {
     clear: both;
     content: "";
     display: block;
 }
-.company-footer{
+
+.company-footer {
     width: 80%;
 }
 
-.company-footer h2{
+.company-footer h2 {
     margin-top: 20px;
 }
 
-.company-footer h2, .company-footer p{
-    margin-bottom:20px ;
+.company-footer h2,
+.company-footer p {
+    margin-bottom: 2px;
 }
-.footer-list li{
+
+.footer-list li {
     margin-bottom: 15px;
 }
 
-.footer-list a{
-    transition:  .5s;
+.footer-list a {
+    transition: .5s;
 }
-.footer-list a:hover{
-    color: #fff ;
+
+.footer-list a:hover {
+    color: #fff;
 }
 
 
-.footer-list li::after{
+.footer-list li::after {
     clear: both;
     content: "";
     display: block;
 }
 
-.article-footer{
+.article-footer {
     width: 80%;
 }
 
-.footer-list.footer-article-list span{
+.footer-list.footer-article-list span {
     display: block;
     float: none;
 }
 
-.fab{
+.fab {
     font-size: 30px;
-    margin-right: 10px ;
+    margin-right: 10px;
     float: left;
 }
 
-.footer-list li span{
-   float: left;
-   height: 30px; 
-   line-height: 30px;
+.footer-list li span {
+    float: left;
+    height: 30px;
+    line-height: 30px;
 }
 
-.footer-bottom{
-    border-top:  1px solid #b2b2b2;
+.footer-bottom {
+    border-top: 1px solid #b2b2b2;
 }
-.footer-bottom p{
+
+.footer-bottom p {
     font-weight: 600;
     margin-top: 40px;
+}
+
+/*Responsive*/
+@media screen and (min-width:2560px){
+    .container , nav{
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+    }
+   
+}
+
+
+@media screen and (max-width: 1024px) {
+    #logo {
+        position: absolute;
+        left: 50px;
+    }
+
+    .nav-container ul {
+        float: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    .nav-container ul li {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        display: inline-block;
+        padding: 0 1em;
+    }
+
+    #search-form {
+        padding-top: 25em;
+        padding-top: 5em;
+    }
+
+    #search-form form {
+        width: 60%;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #search-form form input,
+    #search-form form select {
+        display: block;
+        margin: 0;
+        margin-bottom: 25px;
+        width: 100%;
+        border-width: 0;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+
+    .wrapper {
+        max-width: 960px;
+    }
+
+
+    .status-box {
+        padding: 30px;
+    }
+
+
 }

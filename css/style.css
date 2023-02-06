@@ -610,13 +610,15 @@ footer .wrapper:after {
 }
 
 /*Responsive*/
-@media screen and (min-width:2560px){
-    .container , nav{
+@media screen and (min-width:2560px) {
+
+    .container,
+    nav {
         position: relative;
         margin-right: auto;
         margin-left: auto;
     }
-   
+
 }
 
 
@@ -674,4 +676,61 @@ footer .wrapper:after {
     }
 
 
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper{
+        max-width: 700px;
+    }
+    .company-box {
+        width: 20%;
+        padding-left: 1em;
+    }
+
+    .company-box,
+    .company-info h3 {
+        font-size: .9em;
+    }
+
+    .company-box .company-info p,
+    .locality i,
+    .locality p,
+    .job-type span {
+        font-size: .8em;
+    }
+
+    .job-type {
+        right: 1em;
+    }
+    #sendjobs-inner h2 , p{
+        text-shadow: .5px .5px #000;
+    }
+
+    .status-box{
+        width: 24.4%;
+        border: none;
+        padding: 5px 30px;
+    }
+
+    .status-box:nth-child(1) , .status-box:nth-child(3){
+        border-right: 1px solid #ddd;
+    }
+        
+    .status-text {
+        font-size: 16px;
+    }
+
+    .testmony-box{
+        width: 49.4%;
+       
+    }
+    #testmony-container{
+        padding: 5em 0 2em;
+    }
+    .article-box{
+        width: 100%;
+        display: block;
+        padding: 2em 0;
+    }
+  
 }

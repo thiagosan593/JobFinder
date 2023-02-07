@@ -13,6 +13,11 @@ html {
     width: 100%;
 }
 
+/*hide on desktop*/
+.nav-container .btn-menumobile {
+    display: none;
+}
+
 /*header*/
 header {
     position: relative;
@@ -610,7 +615,7 @@ footer .wrapper:after {
 }
 
 /*Responsive*/
-@media screen and (min-width:2560px) {
+@media screen and (min-width:2017px) {
 
     .container,
     nav {
@@ -679,9 +684,10 @@ footer .wrapper:after {
 }
 
 @media screen and (max-width: 768px) {
-    .wrapper{
+    .wrapper {
         max-width: 700px;
     }
+
     .company-box {
         width: 20%;
         padding-left: 1em;
@@ -702,35 +708,92 @@ footer .wrapper:after {
     .job-type {
         right: 1em;
     }
-    #sendjobs-inner h2 , p{
+
+    #sendjobs-inner h2,
+    p {
         text-shadow: .5px .5px #000;
     }
 
-    .status-box{
+    .status-box {
         width: 24.4%;
         border: none;
         padding: 5px 30px;
     }
 
-    .status-box:nth-child(1) , .status-box:nth-child(3){
+    .status-box:nth-child(1),
+    .status-box:nth-child(3) {
         border-right: 1px solid #ddd;
     }
-        
+
     .status-text {
         font-size: 16px;
     }
 
-    .testmony-box{
+    .testmony-box {
         width: 49.4%;
-       
+
     }
-    #testmony-container{
+
+    #testmony-container {
         padding: 5em 0 2em;
     }
-    .article-box{
+
+    .article-box {
         width: 100%;
         display: block;
         padding: 2em 0;
     }
-  
+
+}
+
+@media screen and (max-width: 576px) {
+    .nav-container .btn-menumobile {
+        display: block !important;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        height: 4em;
+    }
+
+
+    #logo {
+        margin-left: 1%;
+        height: 2em;
+        width: 2em;
+        margin-top:0;
+    
+    }
+   
+    .btn-menumobile{
+        width: 30px;
+        font-size: 1.80em;
+        color: #ccc;
+        margin-top:  .75em;
+        margin-left: .20em;
+    }
+
+    .nav-container ul{
+        position: relative;
+        top: .9em;
+        height: 3em;
+        line-height: 3em;
+        display: none;
+    }
+    .nav-container ul li{
+        display: block;
+        background-color: #fff;
+        margin: 0;
+        border-top: 1px solid #ccc ;
+    }
+    .nav-container ul li a{
+        font-size: 1em;
+    }
+    .open{
+        display: block !important;
+    }
 }

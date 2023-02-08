@@ -683,6 +683,15 @@ footer .wrapper:after {
 
 }
 
+@media screen and (max-width: 991px) {
+    /*   #search-form h1,
+    p {
+       // text-shadow: 1px 1px  1px #fff;
+        
+    }
+    */
+}
+
 @media screen and (max-width: 768px) {
     .wrapper {
         max-width: 700px;
@@ -713,6 +722,14 @@ footer .wrapper:after {
     p {
         text-shadow: .5px .5px #000;
     }
+
+    /* #search-form h1 {
+        font-size: 30px;
+    }
+    #search-form p {
+        font-size: 16px;
+    }
+*/
 
     .status-box {
         width: 24.4%;
@@ -746,7 +763,7 @@ footer .wrapper:after {
 
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 425px) {
     .nav-container .btn-menumobile {
         display: block !important;
     }
@@ -760,40 +777,138 @@ footer .wrapper:after {
         height: 4em;
     }
 
+    .wrapper {
+        max-width: 400px;
+    }
 
     #logo {
         margin-left: 1%;
         height: 2em;
         width: 2em;
-        margin-top:0;
-    
+        margin-top: 0;
+
     }
-   
-    .btn-menumobile{
+
+    .btn-menumobile {
         width: 30px;
         font-size: 1.80em;
         color: #ccc;
-        margin-top:  .75em;
+        margin-top: .75em;
         margin-left: .20em;
     }
 
-    .nav-container ul{
+    .nav-container ul {
         position: relative;
         top: .9em;
         height: 3em;
         line-height: 3em;
         display: none;
     }
-    .nav-container ul li{
+
+    .nav-container ul li {
         display: block;
         background-color: #fff;
         margin: 0;
-        border-top: 1px solid #ccc ;
+        border-top: 1px solid #ccc;
     }
-    .nav-container ul li a{
+
+    .nav-container ul li a {
         font-size: 1em;
     }
-    .open{
+
+    .open {
         display: block !important;
     }
+
+    #main-banner {
+        margin-top: 4em;
+    }
+
+    #search-form {
+        padding-top: 15em;
+        padding-bottom: 5em;
+        width: 90%;
+    }
+
+    #search-form h1 {
+        font-size: 1.6em;
+    }
+
+    #search-form p {
+        font-size: 1em;
+        margin-bottom: 2em;
+    }
+
+    #search-form form {
+        width: 80%;
+    }
+
+    #search-form input[type=submit] {
+        margin-bottom: 0;
+    }
+
+    #lastjobs-container {
+        padding: 5em 0;
+    }
+
+    .locality {
+        display: none;
+    }
+
+    .company-box,
+    .company-info {
+        margin-left: 2em;
+        width: 8em;
+    }
+
+    .company-box,
+    .company-info h3 {
+        font-size: .8em;
+    }
+
+    .job-type {
+        width: 22%;
+    }
+
+    #sendjobs-container {
+        background-position: 35% 0;
+        padding: 10em 0;
+
+    }
+
+    #sendjobs-container h2 {
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    #sendjobs-container p {
+        font-size: 1em;
+        width: 100%;
+    }
+    #testmony-container{
+        padding:  5em 0;
+    }
+    #testmony-container p{
+        margin-bottom: 1em;
+    }
+
+    .testmony-box {
+        width: 98%;
+    }
+
+    .status-box {
+        margin-top: 3em;
+        width: 90%;
+    }
+
+    .status-box:nth-child(1),
+    .status-box:nth-child(3){
+        border: none;
+    }
+    .footer-box{
+        width: 100%;
+        display: block;
+    }
+
+ 
 }

@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="findjobs">
         <header>
             <nav>
 
@@ -33,28 +33,46 @@
                 </div>
             </nav>
 
-            <div id="main-banner">
-                <div id="search-form">
-                    <h1>A maneira mais fácil de encontrar seu novo emprego</h1>
-                    <p>Conecte-se de forma gratuita as melhores empresas e consiga o emprego dos seus sonhos.</p>
-                    <form>
-                        <label for="Job"></label>
-                        <input type="text" name="Job" placeholder="Digite o cargo">
-                        <select name="region">
-                            <option value="">Todos os Estados</option>
-                        </select>
-                        <select name="category">
-                            <option value="">Categoria</option>
-                        </select>
-                        <input type="submit" value="Pesquisar">
-                    </form>
-                </div>
-            </div>
         </header>
 
 
         <main id="lastjobs-container" class="wrapper">
-            <h1>Últimas vagas Enviadas</h1>
+            <h1>Busque a sua vaga</h1>
+            <div id="job-filter">
+                <div id="search-form">
+                    <form>
+                        <input type="text" name="job" placeholder="Digite o cargo">
+                        <select name="region" id="0">
+                            <option value="0">Todos os estados</option>
+                        </select>
+                        <select name="category" id="0">
+                            <option value="0">Categoria</option>
+                        </select>
+                        <input type="submit" value="Pesquisar">
+                    </form>
+
+                </div>
+            </div>
+
+            <div id="type-filter">
+                <ul>
+                    <li>
+                        <input name="clt" id="clt" type="checkbox" checked>
+                        <label for="clt"> CLT </label>
+                    </li>
+                    <li>
+                        <input name="PJ" id="PJ" type="checkbox" checked><label for="PJ">PJ</label>
+                    </li>
+                    <li>
+                        <input name="Home-office" id="Home-office" type="checkbox" checked><label for="Home-office">Home Office</label>
+                    </li>
+                    <li>
+                        <input name="Free-lancer" id="Free-lancer" type="checkbox" checked><label for="Free-lancer">Free Lancer</label>
+                    </li>
+                </ul>
+
+            </div>
+
             <ul>
                 <li>
                     <a href="#" class="clickarea">
@@ -130,135 +148,10 @@
                 </li>
             </ul>
             <div class="btnjobs-container">
-                <a href="#" class="btn-jobs">Ver mais vagas</a>
+                <a href="#" class="btn-jobs">Carregar mais vagas</a>
             </div>
         </main>
 
-
-        <section id="sendjobs-container">
-            <div id="sendjobs-inner" class="wrapper">
-                <h2>Envie uma vaga que será vista por milhares de candidatos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim consequatur odio ducimus, debitis
-                    incidunt in ab sint numquam similique. Mollitia eligendi nesciunt qui corporis temporibus. Suscipit
-                    unde amet sint? Culpa!</p>
-                <a href="#" class="light-btn">Enviar Vaga</a>
-            </div>
-        </section>
-
-        <section id="status-container" class="wrapper">
-            <h2 class="title-center">Estatísticas do JobFinder</h2>
-            <p class="p-center">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto ipsum deleniti assumenda quia autem,
-                consectetur dolorem quasi voluptate dolores obcaecati sint commodi dicta, odit libero culpa nihil
-                possimus beatae nesciunt Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            <div>
-                <div class="status-box">
-                    <span class="status-qtd">150</span>
-                    <p class="status-text">Vagas Abertas</p>
-                </div>
-                <div class="status-box">
-                    <span class="status-qtd">250</span>
-                    <p class="status-text">Candidatos contratados</p>
-                </div>
-                <div class="status-box">
-                    <span class="status-qtd">50</span>
-                    <p class="status-text">Empresas Participantes</p>
-                </div>
-                <div class="status-box">
-                    <span class="status-qtd">550</span>
-                    <p class="status-text">Candidatos</p>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="testmony-container">
-            <div class="wrapper">
-                <h2>
-                    Veja o que os candidatos dizem
-                </h2>
-                <p class="p-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corrupti beatae
-                    tenetur expedita illo! Rem, quae accusamus repudiandae quis, ducimus dolores assumenda natus commodi
-                    quo adipisci soluta maxime magnam consectetur.</p>
-                <div class="testmony-box">
-                    <p class="testmony-msg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aspernatur
-                        animi in esse nesciunt
-                        vel ea delectus.
-                    </p>
-                    <img src="img/avatar1.png" alt="">
-                    <p class="testmony-name">
-                        João
-                    </p>
-                </div>
-                <div class="testmony-box">
-                    <p class="testmony-msg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aspernatur
-                        animi in esse nesciunt
-                        vel ea delectus.
-                    </p>
-                    <img src="img/avatar2.png" alt="">
-                    <p class="testmony-name">
-                        Maria
-                    </p>
-                </div>
-                <div class="testmony-box">
-                    <p class="testmony-msg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aspernatur
-                        animi in esse nesciunt
-                        vel ea delectus.
-                    </p>
-                    <img src="img/avatar3.png" alt="">
-                    <p class="testmony-name">
-                        Pedro
-                    </p>
-                </div>
-                <div class="testmony-box">
-                    <p class="testmony-msg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aspernatur
-                        animi in esse nesciunt
-                        vel ea delectus.
-                    </p>
-                    <img src="img/avatar4.png" alt="">
-                    <p class="testmony-name">
-                        Ana
-                    </p>
-                </div>
-        </section>
-
-        <section id="blog-container" class="wrapper">
-            <h2 class="title-center">Últimos artigos do nosso blog</h2>
-            <p class="p-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corrupti beatae
-                tenetur expedita illo! Rem, quae accusamus repudiandae quis, ducimus dolores assumenda natus commodi
-                quo adipisci soluta maxime magnam consectetur.
-            </p>
-            <div class="article-box">
-                <img src="img/blog1.jpg" alt="">
-                <h4><a href="#">Article Title</a></h4>
-                <p class="article-date">05 de fevereiro de 2023 | 10 cometários</p>
-                <p class="article-resume">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis magnam
-                    deleniti molestias.</p>
-                <a href="#" class="article-btn light-btn">Ler Post</a>
-            </div>
-            <div class="article-box">
-                <img src="img/blog2.jpg" alt="">
-                <h4><a href="#">Article Title</a></h4>
-                <p class="article-date">05 de fevereiro de 2023 | 10 cometários</p>
-                <p class="article-resume">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis magnam
-                    deleniti molestias.</p>
-                <a href="#" class="article-btn light-btn">Ler Post</a>
-            </div>
-            <div class="article-box">
-                <img src="img/blog3.jpg" alt="">
-                <h4><a href="#">Article Title</a></h4>
-                <p class="article-date">05 de fevereiro de 2023 | 10 cometários</p>
-                <p class="article-resume">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis magnam
-                    deleniti molestias.</p>
-                <a href="#" class="article-btn light-btn">Ler Post</a>
-            </div>
-        </section>
 
         <footer>
             <div class="wrapper">

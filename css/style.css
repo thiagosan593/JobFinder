@@ -122,7 +122,8 @@ nav::after {
     margin: 0 10px;
 }
 
-#search-form input[type=submit] {
+#search-form input[type=submit],
+#sendjobs input[type=submit] {
     background-color: #3381f3;
     text-transform: uppercase;
     color: #fff;
@@ -130,7 +131,8 @@ nav::after {
     transition: 0.5s;
 }
 
-#search-form input[type=submit]:hover {
+#search-form input[type=submit]:hover,
+#sendjobs input[type=submit]:hover {
     background-color: #2b79eb;
 }
 
@@ -690,6 +692,67 @@ footer .wrapper:after {
     margin-left: .5em;
 }
 
+/*send jobs-page*/
+#sendjobs #sendjobs-container {
+    margin-top: 100px;
+    background: none;
+    padding: 5em 0;
+
+}
+
+#sendjobs h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.input-box {
+    margin-bottom: 2em;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sendjobs label {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+
+}
+
+#sendjobs input,
+#sendjobs select,
+#sendjobs textarea {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+
+#sendjobs input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0;
+    width: 100%;
+
+}
+
+
+#sendjobs textarea,
+#sendjobs select,
+#sendjobs submit {
+    border: 1px solid #ccc;
+    font-family: 'Opens sans', sans-serif;
+    margin: 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#sendjobs .input-box input[type=submit] {
+    margin-bottom: 1em;
+}
+
 
 /*Responsive*/
 @media screen and (min-width:2017px) {
@@ -837,6 +900,7 @@ footer .wrapper:after {
         border-bottom: .9px solid #ccc;
         box-sizing: border-box;
     }
+
 }
 
 @media screen and (max-width: 425px) {
@@ -1006,7 +1070,7 @@ footer .wrapper:after {
     #findjobs #type-filter ul li {
         display: inline-block;
         width: 48%;
-       
+
     }
 
     #findjobs #type-filter ul li:last-child {
@@ -1018,5 +1082,20 @@ footer .wrapper:after {
         border-bottom: none;
     }
 
+    /*send jobs page*/
+    #sendjobs #sendjobs-container {
+        padding: 2em 0;
 
+    }
+
+    #sendjobs h1 {
+        font-size: 2em;
+        width: 60%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .input-box{
+        width: 80%;
+    }
 }

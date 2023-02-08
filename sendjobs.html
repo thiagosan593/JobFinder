@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobFinder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/94dc563e60.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/94dc563e60.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container" id="sendjobs">
+        <header>
+            <nav>
+
+                <div class="nav-container">
+                    <a href="index.html">
+                        <img id="logo" src="img/logo.png" alt="logo-JobFinder">
+                    </a>
+                    <i class="fas fa-bars btn-menumobile"></i>
+                    <ul>
+                        <li><a href="findjobs.html">Encontrar Vaga</a></li>
+                        <li><a href="sendjobs.html">Enviar Vaga</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        <main id="sendjobs-container" class="wrapper">
+            <h1> Preencha os dados da vaga</h1>
+            <form>
+                <div class="input-box">
+                    <label for="jobtitle">Título da vaga<span class="required">*</span></label>
+                    <input type="text" name="jobtitle" id="jobtitle" placeholder="Insira o titulo da vaga">
+                </div>
+                <div class="input-box">
+                    <label for="description">Descrição da vaga<span class="required">*</span></label>
+                    <textarea rows="6" placeholder="Insira a Descrição da vaga" name="description">
+                    </textarea>
+                </div>
+                <div class="input-box">
+                    <label for="company">Nome da empresa<span class="required">*</span></label>
+                    <input type="text" name="company" id="company" placeholder="Insira o nome da empresa">
+                </div>
+                <div class="input-box">
+                    <label for="company">Tipo de contratação' <span class="required">*</span></label>
+                    <select name="jobtype">
+                        <option value="#">Escola uma opção</option>
+                        <option value="pj">PJ</option>
+                        <option value="clt">CLT</option>
+                        <option value="homeoffice">Home Office</option>
+                        <option value="freelancer">Free Lancer</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+
+            </form>
+        </main>
+
+        <footer>
+            <div class="wrapper">
+                <div class="footer-box">
+                    <div class="company-footer">
+                        <img src="./img/logo.png" alt="">
+                        <h2>JobFinder</h2>
+                        <p>A maneira mais fácil de encontrar seu próximo emprego </p>
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <div class="articles-footer">
+                        <h2>Artigos rescentes</h2>
+                        <ul class="footer-list footer-article-list">
+                            <li>
+                                <a href=""" >Como conseguir o primeiro emprego em tempos de crise?</a>
+                                <span class=" article-date"> 05 de fevereiro de 2023 </span>
+                            </li>
+                            <li>
+                                <a href=""" >Como conseguir o primeiro emprego em tempos de crise?</a>
+                                <span class=" article-date"> 05 de fevereiro de 2023 </span>
+                            </li>
+                            <li>
+                                <a href=""" >Como conseguir o primeiro emprego em tempos de crise?</a>
+                                <span class=" article-date"> 05 de fevereiro de 2023 </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <h2>Nos encontre nas redes sociais</h2>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-square"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin"></i>
+                                <span>Linkedin</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="wrapper">
+                    <p>S 2023</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous">
+        </script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

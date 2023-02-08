@@ -2,7 +2,7 @@
 * {
     margin: 0;
     color: #666;
-    
+
 }
 
 html {
@@ -311,7 +311,7 @@ nav::after {
 .light-btn {
     background-color: #fff;
     border: 2px solid #fff;
-    
+
     font-weight: bolder;
     text-transform: uppercase;
     padding: 10px 20px;
@@ -402,7 +402,7 @@ nav::after {
 
 #testmony-container .testmony-box .testmony-msg {
     background-color: #fff;
-    
+
     border-radius: 10px;
     padding: 20px;
     width: 50%;
@@ -502,7 +502,7 @@ nav::after {
 
 footer {
     margin-top: 3em;
-  
+    background-color: #666;
     padding: 5em 0;
     padding-bottom: 40px;
     border-top: 5px solid #3381f3;
@@ -644,12 +644,13 @@ footer .wrapper:after {
 }
 
 #findjobs #lastjobs-container ul {
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-	margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0;
 }
+
 #type-filter {
-	text-align: left;
+    text-align: left;
 }
 
 #findjobs #type-filter ul {
@@ -681,11 +682,12 @@ footer .wrapper:after {
 #findjobs #type-filter ul li:nth-child(4) {
     border-right: 0;
 }
-#findjobs #type-filter label{
-   text-transform: uppercase;
 
-   font-weight: bold;
-   margin-left: .5em;
+#findjobs #type-filter label {
+    text-transform: uppercase;
+
+    font-weight: bold;
+    margin-left: .5em;
 }
 
 
@@ -756,6 +758,12 @@ footer .wrapper:after {
     }
 
 
+    #findjobs,
+    #search-form input[type=submit] {
+        margin-bottom: 0;
+    }
+
+
 }
 
 
@@ -820,6 +828,15 @@ footer .wrapper:after {
         padding: 2em 0;
     }
 
+}
+
+@media screen and (max-width: 688px) {
+    #findjobs #type-filter ul li {
+        display: inline-block;
+        width: 48%;
+        border-bottom: .9px solid #ccc;
+        box-sizing: border-box;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -910,6 +927,14 @@ footer .wrapper:after {
         padding: 5em 0;
     }
 
+
+    #findjobs #type-filter ul li {
+        width: 30%;
+        font-size: .8em;
+
+
+    }
+
     .locality {
         display: none;
     }
@@ -970,6 +995,27 @@ footer .wrapper:after {
     .footer-box {
         width: 100%;
         display: block;
+    }
+
+    /*Find jobs Page*/
+    #findjobs,
+    #search-form input[type=submit] {
+        margin-bottom: 0;
+    }
+
+    #findjobs #type-filter ul li {
+        display: inline-block;
+        width: 48%;
+       
+    }
+
+    #findjobs #type-filter ul li:last-child {
+        border-bottom: none;
+        border-right: none;
+    }
+
+    #findjobs #type-filter ul li:nth-child(3) {
+        border-bottom: none;
     }
 
 

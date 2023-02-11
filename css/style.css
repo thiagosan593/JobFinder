@@ -509,6 +509,7 @@ footer {
     padding: 5em 0;
     padding-bottom: 40px;
     border-top: 5px solid #3381f3;
+    
 }
 
 footer h2,
@@ -518,6 +519,7 @@ footer a,
 footer span,
 footer i {
     color: #d1d1d1;
+  
 }
 
 footer h2 {
@@ -612,6 +614,7 @@ footer .wrapper:after {
 .footer-bottom p {
     font-weight: 600;
     margin-top: 40px;
+    text-align: center;
 }
 
 /*Find Jobs Page*/
@@ -927,11 +930,22 @@ footer .wrapper:after {
 /*Responsive*/
 @media screen and (min-width:2017px) {
 
+
     .container,
     nav {
         position: relative;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .nav-container {
+        max-width: 1820px;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #main-banner{
+       margin-top: 0px;
     }
 
 }
@@ -942,6 +956,7 @@ footer .wrapper:after {
         position: absolute;
         left: 50px;
     }
+ 
 
     .nav-container ul {
         float: none;
@@ -1002,12 +1017,13 @@ footer .wrapper:after {
         padding-right: 1em;
 
     }
-    #job-header .wrapper{
+
+    #job-header .wrapper {
         padding-left: 2em;
         padding-right: 2em;
     }
 
-    
+
 
 }
 
@@ -1057,7 +1073,8 @@ footer .wrapper:after {
         width: 49.4%;
 
     }
-    .article-box{
+
+    .article-box {
         width: 100%;
         padding: 15px;
         box-sizing: border-box;
@@ -1087,20 +1104,23 @@ footer .wrapper:after {
         border-bottom: .9px solid #ccc;
         box-sizing: border-box;
     }
-    #job-header #job-info{
+
+    #job-header #job-info {
         margin-top: 1em;
     }
+
     #job-header #job-info div {
         position: relative;
         margin-right: auto;
         margin-left: auto;
-        width:100%;
+        width: 100%;
         display: block;
     }
+
     .job-type span {
-       box-sizing: border-box;
+        box-sizing: border-box;
         width: 80%;
-        
+
     }
 
 }
@@ -1303,26 +1323,29 @@ footer .wrapper:after {
     }
 
     /*job page*/
-    
-    #job-container{
+
+    #job-container {
         width: 100%;
     }
-    #companyinfo-container{
+
+    #companyinfo-container {
         width: 100%;
         display: block;
         padding-top: 0em;
         padding-left: 0em;
 
     }
+
     #companyinfo-container .job-type {
-		right: 0;
-	}
+        right: 0;
+    }
+
     #job-header #job-info .job-type {
         padding-top: 5px;
         margin-left: 3.5%;
     }
 
-    .job-type span  {
+    .job-type span {
         display: block;
         width: 100%;
         height: 20px;
@@ -1332,8 +1355,9 @@ footer .wrapper:after {
         align-items: center;
     }
 }
+
 @media screen and (max-width: 375px) {
-    .wrapper{
+    .wrapper {
         max-width: 300px;
     }
 }

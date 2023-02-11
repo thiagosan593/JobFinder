@@ -253,6 +253,7 @@ nav::after {
 
 .clt {
     background-color: #735fee;
+
 }
 
 .pj {
@@ -754,7 +755,7 @@ footer .wrapper:after {
     margin-bottom: 1em;
 }
 
-/*Job page*/
+/*ge*/
 #job-header {
     width: 100%;
     background-color: #FAFAFA;
@@ -802,6 +803,7 @@ footer .wrapper:after {
 #job-info .date p {
     display: inline-block;
 }
+
 #job-info .localit i,
 #job-info .localit p {
     display: inline;
@@ -811,65 +813,74 @@ footer .wrapper:after {
 #job-info .date p {
     margin-left: 10px;
 }
-#job-header #job-info div:nth-child(2){
+
+#job-header #job-info div:nth-child(2) {
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
 }
 
-#jobpage .wrapper{
+#jobpage .wrapper {
     padding: 2em 0;
 }
-#jobpage wrapper:after{
+
+#jobpage .wrapper:after {
     clear: both;
     content: "";
     display: block;
 }
-#job-container{
+
+#job-container {
     float: left;
     width: 75%;
     position: relative;
 }
 
-#jobpage .page-title{
+#jobpage .page-title {
 
-    font-size:  24px;
+    font-size: 24px;
     margin-bottom: 1.5em;
 }
-#jobpage  .description{
-    margin-bottom:  1.5em;
+
+#jobpage .description {
+    margin-bottom: 1.5em;
 }
-#company-img{
+
+#company-img {
     width: 100%;
-    margin-bottom: 1.5em ;
+    margin-bottom: 1.5em;
 }
-#companyinfo-container{
+
+#companyinfo-container {
     float: right;
     width: 25%;
     padding-top: 4em;
     padding-left: 1.5em;
     box-sizing: border-box;
 }
-.jobpage-list{
+
+.jobpage-list {
     margin-bottom: 1.5em;
     font-size: 1em;
     line-height: 2em;
 }
-#companyinfo-container img{
+
+#companyinfo-container img {
     width: 100%;
     display: block;
-    border-bottom:  1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 
 }
 
-#companyinfo-container .job-type{
+#companyinfo-container .job-type {
     display: block;
     width: 100%;
     position: relative;
     border-bottom: 1px solid #ccc;
-    padding:  2em 0;
-    
+    padding: 2em 0;
+
 }
-#apply-btn{
+
+#apply-btn {
     width: 100%;
     height: 60px;
     line-height: 60px;
@@ -879,17 +890,39 @@ footer .wrapper:after {
     text-decoration: none;
     background-color: transparent;
     border: 2px solid #3381f3;
-    color: #3381f3 ;
+    color: #3381f3;
     border-radius: 5px;
     display: block;
     box-sizing: border-box;
     text-align: center;
     transition: .5s;
 }
-#apply-btn:hover{
+
+#apply-btn:hover {
     background-color: #3381f3;
     color: #fff;
 }
+
+#job-social-list {
+    margin-top: 1em;
+    padding-left: 0;
+
+}
+
+#job-social-list li {
+    display: flex;
+    list-style: none;
+    height: 50px;
+
+    line-height: 33px;
+}
+
+#job-social-list li a {
+    text-decoration: none;
+}
+
+
+
 
 /*Responsive*/
 @media screen and (min-width:2017px) {
@@ -963,6 +996,18 @@ footer .wrapper:after {
         margin-bottom: 0;
     }
 
+    /*Job Page*/
+    #job-header #job-info div {
+        padding-left: 1em;
+        padding-right: 1em;
+
+    }
+    #job-header .wrapper{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    
 
 }
 
@@ -982,12 +1027,7 @@ footer .wrapper:after {
         font-size: .9em;
     }
 
-    .company-box .company-info p,
-    .locality i,
-    .locality p,
-    .job-type span {
-        font-size: .8em;
-    }
+
 
     .job-type {
         right: 1em;
@@ -1022,11 +1062,16 @@ footer .wrapper:after {
         padding: 5em 0 2em;
     }
 
-    .article-box {
-        width: 100%;
-        display: block;
-        padding: 2em 0;
+
+    #job-header #job-info div {
+        padding-left: .6em;
+        padding-right: .6em;
+        font-size: .8em;
+
     }
+
+
+
 
 }
 
@@ -1036,6 +1081,21 @@ footer .wrapper:after {
         width: 48%;
         border-bottom: .9px solid #ccc;
         box-sizing: border-box;
+    }
+    #job-header #job-info{
+        margin-top: 1em;
+    }
+    #job-header #job-info div {
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        width:100%;
+        display: block;
+    }
+    .job-type span {
+       box-sizing: border-box;
+        width: 80%;
+        
     }
 
 }
@@ -1235,5 +1295,40 @@ footer .wrapper:after {
 
     .input-box {
         width: 80%;
+    }
+
+    /*job page*/
+    
+    #job-container{
+        width: 100%;
+    }
+    #companyinfo-container{
+        width: 100%;
+        display: block;
+        padding-top: 0em;
+        padding-left: 0em;
+
+    }
+    #companyinfo-container .job-type {
+		right: 0;
+	}
+    #job-header #job-info .job-type {
+        padding-top: 5px;
+        margin-left: 3.5%;
+    }
+
+    .job-type span  {
+        display: block;
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        border-radius: 5px;
+        color: #fff;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 375px) {
+    .wrapper{
+        max-width: 300px;
     }
 }

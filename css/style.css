@@ -1057,6 +1057,11 @@ footer .wrapper:after {
         width: 49.4%;
 
     }
+    .article-box{
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
 
     #testmony-container {
         padding: 5em 0 2em;
